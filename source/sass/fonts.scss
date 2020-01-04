@@ -1,0 +1,51 @@
+/*   подключение шрифтов   */
+
+/* Bebas Neue Regular*/
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Bebas Neue";
+
+  font-display: swap;
+  src: url("../fonts/BebasNeue-400.woff2") format("woff2"), url("../fonts/bebasneue-400.woff") format("woff"), url("../fonts/bebasneue-400.ttf") format("truetype");
+}
+
+/* Bebas Neue Bold*/
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Bebas Neue";
+
+  font-display: swap;
+  src: url("../fonts/BebasNeue-700.woff2") format("woff2"), url("../fonts/bebasneue-700.woff") format("woff"), url("../fonts/bebasneue-700.ttf") format("truetype");
+}
+
+/* Roboto Condensed Light */
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Roboto Condensed";
+
+  font-display: swap;
+  src: url("../fonts/Robotocondensed-300.woff2") format("woff2"), url("../fonts/Robotocondensed-300.woff") format("woff"), url("../fonts/Robotocondensed-300.ttf") format("truetype");
+}
+
+/* Roboto Condensed Regular */
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto Condensed";
+
+  font-display: swap;
+  src: url("../fonts/Robotocondensed-400.woff2") format("woff2"), url("../fonts/Robotocondensed-400.woff") format("woff"), url("../fonts/Robotocondensed-400.ttf") format("truetype");
+}
+
+/* Roboto Condensed Bold */
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+
+  font-display: swap;
+  src: url("../fonts/Robotocondensed-700.woff2") format("woff2"), url("../fonts/Robotocondensed-700.woff") format("woff"), url("../fonts/Robotocondensed-700.ttf") format("truetype");
+}
