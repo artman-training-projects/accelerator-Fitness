@@ -14,6 +14,5 @@ Thumbs.db
 build/
 source/design/
 
-.htmlhintrc
-.stylelintrc.js
+.stylelintrc
 .csscomb.json

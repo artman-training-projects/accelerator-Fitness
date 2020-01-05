@@ -92,11 +92,16 @@ gulp.task("server", function() {
     ui: false
   });
 
-  gulp.watch("source/*.html").on("change", gulp.series("html", server.reload));
-  gulp.watch("source/sass/**/*.{sass,scss}").on("change", gulp.series("style", server.reload));
-  gulp.watch("source/js/**/*.js").on("change", gulp.series("script", server.reload));
-  gulp.watch("source/design/svg/sp-*.svg").on("change", gulp.series("sprite", "html", server.reload));
-  gulp.watch("source/img/**/*").on("change", gulp.series("copy", server.reload));
+  gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/sass/**/*.{sass,scss}", gulp.series("style", "refresh"));
+  gulp.watch("source/js/**/*.js", gulp.series("script", "refresh"));
+  gulp.watch("source/design/svg/sp-*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/img/**/*", gulp.series("copy", "refresh"));
+});
+
+gulp.task("refresh", function (done) {
+  server.reload();
+  done();
 });
 
 gulp.task("pixel-glass", function() {
