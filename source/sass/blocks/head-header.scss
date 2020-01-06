@@ -10,4 +10,36 @@
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.02em;
+
+  transition: 0.3s;
+
+  &:hover {
+    color: #003d85;
+  }
+
+  &:active {
+    color: #000000;
+  }
+
+  &:focus {
+    outline: 3px solid #003d85;
+  }
+}
+
+/*   tablet version   */
+@media (max-width: $mw-tablet) {
+  .head-header__link-site,
+  .head-header__link-tel {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+/*   mobile version   */
+@media (max-width: $mw-mobile) {
+  .head-header__link-site,
+  .head-header__link-tel {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

@@ -1,9 +1,9 @@
 .page-header {
   // background: radial-gradient(33.97% 69.22% at 16.03% 39.06%, #003d85 8.95%, #b80027 87.03%);
-  background: url("../img/ameer-basheer_desktop@1x.jpg") no-repeat 65% / 500px 556px, url("../img/bg-gradient_desk@1x.jpg") no-repeat 100% 100% / cover;
+  background: url("../img/ameer-basheer_desktop@1x.jpg") no-repeat calc((100vw - 1366px) / 2 + 555px) / 500px 556px, url("../img/bg-gradient_desk@1x.jpg") no-repeat 100% 100% / cover;
 
   @media ($dppx-2) {
-    background: url("../img/ameer-basheer_desktop@2x.jpg") no-repeat 65% / 500px 556px, url("../img/bg-gradient_desk@2x.jpg") no-repeat 100% 100% / cover;
+    background: url("../img/ameer-basheer_desktop@2x.jpg") no-repeat calc((100vw - 1366px) / 2 + 555px) / 500px 556px, url("../img/bg-gradient_desk@2x.jpg") no-repeat 100% 100% / cover;
   }
 }
 
@@ -11,7 +11,6 @@
   position: relative;
 
   max-width: $mw-desktop;
-  min-height: 658px;
   margin: auto;
 }
 
@@ -22,5 +21,51 @@
 .page-header__main {
   width: 350px;
   padding-top: 82px;
+  padding-bottom: 93px;
   padding-left: 148px;
+}
+
+/*   tablet version   */
+@media (max-width: $mw-tablet) {
+  .page-header {
+    background: url("../img/ameer-basheer_tablet@1x.jpg") no-repeat calc((100vw - 768px) / 2 + 400px) / 324px 390px, url("../img/bg-gradient_tablet@1x.jpg") no-repeat 100% 100% / cover;
+
+    @media ($dppx-2) {
+      background: url("../img/ameer-basheer_tablet@2x.jpg") no-repeat calc((100vw - 768px) / 2 + 400px) / 324px 390px, url("../img/bg-gradient_tablet@2x.jpg") no-repeat 100% 100% / cover;
+    }
+  }
+
+  .page-header__head {
+    padding: 40px 45px;
+  }
+
+  .page-header__main {
+    width: 310px;
+    padding-top: 31px;
+    padding-bottom: 105px;
+    padding-left: calc((100vw - 768px) / 2 + 59px);
+  }
+}
+
+/*   mobile version   */
+@media (max-width: $mw-mobile) {
+  .page-header {
+    background: url("../img/bg-gradient_mobile@1x.jpg") no-repeat 100% 100% / cover;
+
+    @media ($dppx-2) {
+      background: url("../img/bg-gradient_mobile@2x.jpg") no-repeat 100% 100% / cover;
+    }
+  }
+
+  .page-header__head {
+    padding: 20px 15px;
+  }
+
+  .page-header__main {
+    width: 290px;
+    margin: auto;
+    padding-top: 52px;
+    padding-bottom: 78px;
+    padding-left: 0;
+  }
 }

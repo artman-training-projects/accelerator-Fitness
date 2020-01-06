@@ -47,4 +47,69 @@
   font: 12px/14px "Roboto Condensed", "Arial", sans-serif;
   color: $color-text-second;
   letter-spacing: 0.05em;
+
+  transition: 0.3s;
+
+  &:hover {
+    background: linear-gradient(111.72deg, #b80027 17.6%, #003d85 95.31%);
+  }
+
+  &:active {
+    background: linear-gradient(111.72deg, #003d85 17.6%, #b80027 95.31%);
+  }
+
+  &:focus {
+    outline: 5px solid #003d85;
+  }
+}
+
+/*   tablet version   */
+@media (max-width: $mw-tablet) {
+  .head-main__city {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .head-main__title {
+    margin-top: 5px;
+
+    font-size: 86px;
+    line-height: 86px;
+  }
+
+  .head-main__list {
+    top: -78px;
+    left: -16px;
+  }
+
+  .head-main__abonements {
+    width: 178px;
+    margin-top: -22px;
+  }
+}
+
+/*   mobile version   */
+@media (max-width: $mw-mobile) {
+  .head-main__city {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .head-main__title {
+    margin-top: 8px;
+
+    font-size: 78px;
+    line-height: 78px;
+  }
+
+  .head-main__list {
+    top: -70px;
+    left: -2px;
+  }
+
+  .head-main__abonements {
+    width: 282px;
+    height: 55px;
+    margin-top: -17px;
+  }
 }

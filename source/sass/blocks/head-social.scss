@@ -16,5 +16,26 @@
     color: $color-text-second;
     text-transform: uppercase;
     text-decoration: none;
+
+    transition: 0.3s;
+
+    &:hover {
+      color: #003d85;
+    }
+
+    &:active {
+      color: #000000;
+    }
+
+    &:focus {
+      outline: 3px solid #003d85;
+    }
+  }
+}
+
+/*   tablet version   */
+@media (max-width: $mw-tablet) {
+  .head-social {
+    display: none;
   }
 }
