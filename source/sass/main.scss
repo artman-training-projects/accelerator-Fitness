@@ -1,3 +1,9 @@
-h1 {
-  color: navy;
-}
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "blocks/visually-hidden.scss";
+@import "common.scss";
+@import "blocks/page-header.scss";
+@import "blocks/head-header.scss";
+@import "blocks/head-main.scss";
+@import "blocks/head-social.scss";

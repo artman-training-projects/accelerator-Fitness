@@ -1,0 +1,50 @@
+.head-main {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: right;
+}
+
+.head-main__city {
+  font: 49px/49px "Bebas Neue", "Arial", sans-serif;
+  color: $color-text-second;
+  letter-spacing: 0.03em;
+}
+
+.head-main__title {
+  @include reset-head;
+
+  margin-top: 10px;
+
+  font: 700 109px/109px "Bebas Neue", "Arial", sans-serif;
+  color: $color-text-second;
+  letter-spacing: 0.03em;
+}
+
+.head-main__list {
+  @include reset-list;
+
+  position: relative;
+  top: -88px;
+  left: -28px;
+
+  width: 115px;
+}
+
+.head-main__item {
+  font: 14px/21px "Roboto Condensed", "Arial", sans-serif;
+  color: $color-text-second;
+}
+
+.head-main__abonements {
+  @include btn(4px, #ffffff, 224px, 54px);
+
+  margin-top: -5px;
+  margin-left: auto;
+
+  font: 12px/14px "Roboto Condensed", "Arial", sans-serif;
+  color: $color-text-second;
+  letter-spacing: 0.05em;
+}

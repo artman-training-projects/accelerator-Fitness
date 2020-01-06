@@ -1,0 +1,20 @@
+.head-social__list {
+  @include reset-list;
+
+  position: absolute;
+  top: 482px;
+  right: 102px;
+}
+
+.head-social__item {
+  margin-bottom: 14px;
+
+  text-align: center;
+
+  a {
+    font: 12px/14px "Roboto Condensed", "Arial", sans-serif;
+    color: $color-text-second;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}

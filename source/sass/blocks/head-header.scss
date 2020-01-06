@@ -1,0 +1,13 @@
+.head-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head-header__link-site,
+.head-header__link-tel {
+  font: 700 26px/26px "Bebas Neue", "Arial", sans-serif;
+  color: $color-text-second;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}

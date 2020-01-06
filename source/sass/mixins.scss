@@ -1,0 +1,25 @@
+@mixin reset-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+@mixin reset-head {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin btn($border-width, $border-color, $width, $height) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $width;
+  min-height: $height;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: $border-width solid $border-color;
+}
