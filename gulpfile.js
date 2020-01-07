@@ -72,7 +72,8 @@ gulp.task("sprite", function () {
 gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/*",
-    "source/img/**/*"
+    "source/img/**/*",
+    "source/js/lib/*"
   ], {
     base: "source"
   })

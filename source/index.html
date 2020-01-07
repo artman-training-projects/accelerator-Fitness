@@ -68,13 +68,32 @@
   <main class="page-main">
     <section id="gym" class="page-main__gym gym">
       <div class="gym__inner">
-        <h2 class="gym__title">Тренажерный зал</h2>
-        <span class="gym__desc">Просторный зал площадью 900 кв/м</span>
-        <p class="gym__description gym__description--1">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-        <p class="gym__description gym__description--2">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        <div class="gym__article">
+          <h2 class="gym__title">Тренажерный зал</h2>
+          <span class="gym__note">Просторный зал площадью 900 кв/м</span>
+          <p class="gym__description gym__description--1">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p class="gym__description gym__description--2">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        </div>
 
-        <img src="" alt="">
-        <video src=""></video>
+        <picture class="gym__photo">
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/gym-photo_mobile@1x.webp 1x, img/webp/gym-photo_mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1365px)" srcset="img/webp/gym-photo_tablet@1x.webp 1x, img/webp/gym-photo_tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/webp/gym-photo_desktop@1x.webp 1x, img/webp/gym-photo_desktop@2x.webp 2x">
+
+          <source media="(max-width: 767px)" srcset="img/gym-photo_mobile@1x.jpg 1x, img/gym-photo_mobile@2x.jpg 2x">
+          <source media="(max-width: 1365px)" srcset="img/gym-photo_tablet@1x.jpg 1x, img/gym-photo_tablet@2x.jpg 2x">
+          <img src="img/gym-photo_desktop@1x.jpg" srcset="img/gym-photo_desktop@2x.jpg 2x" alt="Тренажёрный зал">
+        </picture>
+
+        <picture class="gym__video" tabindex="0" aria-label="Запустить видео">
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/gym-video_mobile@1x.webp 1x, img/webp/gym-video_mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1365px)" srcset="img/webp/gym-video_tablet@1x.webp 1x, img/webp/gym-video_tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/webp/gym-video_desktop@1x.webp 1x, img/webp/gym-video_desktop@2x.webp 2x">
+
+            <source media="(max-width: 767px)" srcset="img/gym-video_mobile@1x.jpg 1x, img/gym-video_mobile@2x.jpg 2x">
+            <source media="(max-width: 1365px)" srcset="img/gym-video_tablet@1x.jpg 1x, img/gym-video_tablet@2x.jpg 2x">
+          <img src="img/gym-video_desktop@1x.jpg" srcset="img/gym-video_desktop@2x.jpg 2x" alt="Тренажёрный зал">
+        </picture>
       </div>
     </section>
 
@@ -390,5 +409,7 @@
       </div>
     </section>
   </footer>
+
+  <script src="js/lib/picturefill.min.js" async></script>
 </body>
 </html>

@@ -9,6 +9,8 @@
 @mixin reset-head {
   margin-top: 0;
   margin-bottom: 0;
+
+  text-transform: uppercase;
 }
 
 @mixin btn($border-width, $border-color, $width, $height) {
