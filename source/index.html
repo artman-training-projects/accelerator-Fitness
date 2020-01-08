@@ -102,31 +102,36 @@
         <h2 class="abonements__title">Абонементы</h2>
 
         <div class="abonements__type">
-          <label>1 месяц<input type="radio" name="abonementsType" id="1Mounth" value="1Mounth"></label>
-          <label>6 месяцев<input type="radio" name="abonementsType" id="6Mounth" value="6Mounth"></label>
-          <label>12 месяцев<input type="radio" name="abonementsType" id="12Mounth" value="12Mounth"></label>
+          <input type="radio" name="abonementsType" id="1Mounth" value="1Mounth">
+          <label for="1Mounth">1 месяц</label>
+
+          <input type="radio" name="abonementsType" id="6Mounth" value="6Mounth">
+          <label for="6Mounth">6 месяцев</label>
+
+          <input type="radio" name="abonementsType" id="12Mounth" value="12Mounth">
+          <label for="12Mounth">12 месяцев</label>
         </div>
 
         <ul class="abonements__list">
           <li class="abonements__item">
             <h3>С тренером</h3>
             <span>12 занятий</span>
-            <p>5000</p>
-            <a href="buy.html" target="_blank"></a>
+            <p data-parent="5000">5000</p>
+            <a href="buy.html" target="_blank">Купить абонемент</a>
           </li>
 
           <li class="abonements__item">
             <h3>Дневной</h3>
             <span>с 8:00 до 17:00</span>
-            <p>1700</p>
-            <a href="buy.html" target="_blank"></a>
+            <p data-parent="1700">1700</p>
+            <a href="buy.html" target="_blank">Купить абонемент</a>
           </li>
 
           <li class="abonements__item">
             <h3>Полный день</h3>
             <span>с 8:00 до 22:00</span>
-            <p>2700</p>
-            <a href="buy.html" target="_blank"></a>
+            <p data-parent="2700">2700</p>
+            <a href="buy.html" target="_blank">Купить абонемент</a>
           </li>
         </ul>
       </div>

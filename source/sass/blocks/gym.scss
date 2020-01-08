@@ -19,9 +19,6 @@
   @include reset-head;
 
   margin-bottom: 6px;
-
-  font: 700 49px/49px "Bebas Neue", "Arial", sans-serif;
-  letter-spacing: 0.03em;
 }
 
 .gym__note {
@@ -76,6 +73,7 @@
     height: 100px;
 
     background: url("../img/svg/play-video.svg") no-repeat center / contain;
+    cursor: pointer;
 
     transition: 0.3s;
   }
@@ -110,11 +108,6 @@
     margin-left: 0;
 
     text-align: center;
-  }
-
-  .gym__title {
-    font-size: 42px;
-    line-height: 42px;
   }
 
   .gym__description:nth-of-type(1) {
@@ -157,11 +150,6 @@
     margin-bottom: 22px;
 
     text-align: left;
-  }
-
-  .gym__title {
-    font-size: 32px;
-    line-height: 32px;
   }
 
   .gym__description {

@@ -8,9 +8,9 @@
 }
 
 .head-main__city {
-  font: 49px/49px "Bebas Neue", "Arial", sans-serif;
+  @include reset-head;
+
   color: $color-text-second;
-  letter-spacing: 0.03em;
 }
 
 .head-main__title {
@@ -18,9 +18,9 @@
 
   margin-top: 10px;
 
-  font: 700 109px/109px "Bebas Neue", "Arial", sans-serif;
+  font-size: 109px;
+  line-height: 109px;
   color: $color-text-second;
-  letter-spacing: 0.03em;
 }
 
 .head-main__list {
@@ -51,15 +51,15 @@
   transition: 0.3s;
 
   &:hover {
-    background: linear-gradient(111.72deg, #b80027 17.6%, #003d85 95.31%);
+    background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
   }
 
   &:active {
-    background: linear-gradient(111.72deg, #003d85 17.6%, #b80027 95.31%);
+    background: linear-gradient(111.72deg, #003eb7 17.6%, #ed0233 95.31%);
   }
 
   &:focus {
-    outline: 5px solid #b80027;
+    outline: 3px solid #ed0233;
   }
 }
 

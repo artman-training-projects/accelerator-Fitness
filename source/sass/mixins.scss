@@ -10,7 +10,20 @@
   margin-top: 0;
   margin-bottom: 0;
 
+  font: 49px/49px "Bebas Neue", "Arial", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $mw-tablet) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mw-mobile) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 @mixin btn($border-width, $border-color, $width, $height) {
@@ -24,4 +37,21 @@
   text-decoration: none;
 
   border: $border-width solid $border-color;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }
