@@ -1,0 +1,40 @@
+.btn-slide {
+  position: absolute;
+
+  display: block;
+  width: 16px;
+  height: 32px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:focus {
+    outline: 3px solid #003d85;
+  }
+
+  &--prev {
+    background-image: url("../img/svg/arrow-left.svg");
+  }
+
+  &--next {
+    background-image: url("../img/svg/arrow-right.svg");
+  }
+}
+
+/*   mobile version   */
+@media (max-width: $mw-mobile) {
+  .btn-slide {
+    width: 10px;
+    height: 19px;
+  }
+}
