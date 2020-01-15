@@ -24,6 +24,8 @@
 
 .trainers__list {
   display: flex;
+  width: 1160px;
+  margin: auto;
   overflow: hidden;
 }
 
@@ -38,7 +40,7 @@
   box-sizing: border-box;
   width: 260px;
   min-height: 294px;
-  margin-right: calc(100vw / 34.15);
+  margin-right: 40px;
   padding: 55px 45px 45px;
 
   color: #ffffff;
@@ -153,6 +155,14 @@
     }
   }
 
+  .trainers__list {
+    width: 566px;
+
+    @media (min-width: 768px + 290px) {
+      width: 864px;
+    }
+  }
+
   .trainers__title {
     margin-bottom: 40px;
 
@@ -161,7 +171,7 @@
 
   .trainers__item {
     width: 268px;
-    margin-right: calc(100vw / 25.6);
+    margin-right: 30px;
   }
 }
 
@@ -171,18 +181,23 @@
     padding: 35px 47px 70px;
 
     .btn-slide--prev {
-      top: 50%;
+      top: 52%;
       left: 16px;
     }
 
     .btn-slide--next {
-      top: 50%;
+      top: 52%;
       right: 16px;
     }
   }
 
   .trainers__list {
+    width: 226px;
     height: 274px;
+
+    @media (min-width: 320px + 256px) {
+      width: 482px;
+    }
   }
 
   .trainers__item {

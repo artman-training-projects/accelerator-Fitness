@@ -22,7 +22,7 @@
   background-color: $color-bg-red;
 
   a {
-    @include btn(4px, #ffffff, 100%, 64px);
+    @include btn(4px, #ffffff, 340px, 64px);
 
     margin-right: auto;
     margin-left: auto;
@@ -160,6 +160,7 @@
     padding: 49px 45px;
 
     a {
+      width: 198px;
       min-height: 39px;
 
       font-size: 10px;

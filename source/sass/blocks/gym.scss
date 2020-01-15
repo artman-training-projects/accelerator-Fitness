@@ -144,10 +144,13 @@
 /*   mobile version   */
 @media (max-width: $mw-mobile) {
   .gym__inner {
+    align-items: unset;
     padding: 70px 15px;
   }
 
   .gym__article {
+    left: 0;
+
     min-width: 290px;
     margin-bottom: 22px;
 
