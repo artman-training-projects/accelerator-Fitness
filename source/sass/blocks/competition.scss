@@ -1,6 +1,7 @@
 .competition__inner {
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
   max-width: $mw-desktop;
   margin: auto;
   padding: 119px 103px 60px;

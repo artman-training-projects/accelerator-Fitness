@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  box-sizing: border-box;
   max-width: $mw-desktop;
   margin: auto;
   padding: 120px 103px 120px 163px;
