@@ -178,6 +178,7 @@
     padding-left: 0;
 
     &:nth-child(2n) {
+      margin-left: 0;
       span:not(:nth-last-child(1)) {
         width: 60px;
       }
