@@ -24,6 +24,8 @@
 
 .gym__note {
   display: inline-block;
+  margin-top: 0;
+  margin-bottom: 40px;
 
   font-size: 18px;
   line-height: 27px;
@@ -111,6 +113,10 @@
     margin-left: 0;
 
     text-align: center;
+  }
+
+  .gym__note {
+    margin-bottom: 36px;
   }
 
   .gym__description:nth-of-type(1) {
