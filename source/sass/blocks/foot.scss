@@ -1,0 +1,111 @@
+.foot {
+  width: 100%;
+
+  background-color: $color-bg-foot;
+}
+
+.foot__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 44px 103px;
+
+  a {
+    color: $color-text-second;
+    text-decoration: none;
+  }
+
+  a:focus {
+    outline: 3px solid #ed0233;
+  }
+}
+
+.foot__title {
+  @include reset-head;
+
+  font: 26px/26px "Bebas Neue", "Arial", sans-serif;
+
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.foot__nav-list {
+  @include reset-list;
+
+  display: flex;
+
+  font: 14px/16px "Roboto Condensed", "Arial", sans-serif;
+
+  li {
+    margin-left: 40px;
+
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.foot__social-list {
+  @include reset-list;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 0;
+}
+
+.foot__social-item {
+  margin-left: 25px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  a {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  &--vk {
+    width: 24px;
+    height: 13px;
+
+    background: url("../img/svg/social-vk.svg") no-repeat;
+  }
+
+  &--instagram {
+    width: 24px;
+    height: 24px;
+
+    background: url("../img/svg/social-insta.svg") no-repeat;
+  }
+
+  &--fb {
+    width: 12px;
+    height: 24px;
+
+    background: url("../img/svg/social-fb.svg") no-repeat;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,77 @@
+.free {
+  width: 50%;
+
+  color: $color-text-second;
+
+  background-color: $color-text-main;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.free__inner {
+  width: 410px;
+  margin-left: auto;
+  padding: 70px 170px 70px 100px;
+}
+
+.free__form {
+  fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    border: none;
+  }
+
+  legend {
+    @include reset-head;
+
+    width: 100%;
+    margin-bottom: 43px;
+  }
+
+  input {
+    width: 190px;
+    padding-bottom: 5px;
+
+    font: 14px/16px "Roboto Condensed", "Arial", sans-serif;
+    color: $color-text-second;
+
+    background-color: $color-text-main;
+    border: none;
+    border-bottom: 1px solid #74819c;
+  }
+
+  button {
+    @include btn(3px, $color-text-second, 410px, 52px);
+
+    width: 100%;
+    margin-top: 30px;
+
+    font: 700 14px/16px "Roboto Condensed", "Arial", sans-serif;
+    color: $color-text-second;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    background-color: $color-text-main;
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    &:hover {
+      background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+    }
+
+    &:active {
+      background: linear-gradient(111.72deg, #003eb7 17.6%, #ed0233 95.31%);
+    }
+
+    &:focus {
+      outline: 3px solid #ed0233;
+    }
+  }
+}
