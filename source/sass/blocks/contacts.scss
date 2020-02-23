@@ -98,5 +98,18 @@
 
 /*   mobile version   */
 @media (max-width: $mw-mobile) {
-  //
+  .contacts__inner {
+    box-sizing: border-box;
+    width: 320px;
+    margin: auto;
+    padding: 70px 15px 47px 15px;
+  }
+
+  .contacts__list {
+    columns: 1;
+  }
+
+  .contacts__item {
+    margin-bottom: 18px;
+  }
 }

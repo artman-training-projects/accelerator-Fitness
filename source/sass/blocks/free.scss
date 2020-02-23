@@ -91,17 +91,38 @@
   .free__form {
     margin-left: -26px;
 
+    fieldset {
+      flex-direction: column;
+    }
+
     legend {
-      margin-bottom: 37px;
+      margin-bottom: 36px;
     }
 
     input {
       width: 206px;
+      margin-bottom: 40px;
+    }
+
+    button {
+      margin-top: 0;
     }
   }
 }
 
 /*   mobile version   */
 @media (max-width: $mw-mobile) {
-  //
+  .free__inner {
+    box-sizing: border-box;
+    width: 320px;
+    margin: auto;
+    padding: 70px 15px;
+  }
+
+  .free__form {
+    margin-left: 0;
+    input {
+      width: 290px;
+    }
+  }
 }
