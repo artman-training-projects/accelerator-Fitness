@@ -39,10 +39,6 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-
-  &:nth-of-type(1) {
-    margin-top: 40px;
-  }
 }
 
 .gym__photo {
@@ -119,11 +115,7 @@
     margin-bottom: 36px;
   }
 
-  .gym__description:nth-of-type(1) {
-    margin-top: 36px;
-  }
-
-  .gym__description:nth-of-type(2n) {
+  .gym__description--second {
     display: none;
   }
 
@@ -152,6 +144,7 @@
 @media (max-width: $mw-mobile) {
   .gym__inner {
     align-items: unset;
+    margin-left: -15px;
     padding: 70px 15px;
   }
 
@@ -159,9 +152,14 @@
     left: 0;
 
     min-width: 290px;
+    margin: auto;
     margin-bottom: 22px;
 
     text-align: left;
+  }
+
+  .gym__note {
+    margin-bottom: 24px;
   }
 
   .gym__description {
@@ -175,14 +173,16 @@
   .gym__photo {
     width: 320px;
     height: 313px;
+    margin: auto;
     margin-bottom: 40px;
-    margin-left: -15px;
+    // margin-left: -15px;
   }
 
   .gym__video {
     width: 320px;
+    margin: auto;
     margin-top: 0;
-    margin-left: -15px;
+    // margin-left: -15px;
 
     &::after {
       left: 125px;
