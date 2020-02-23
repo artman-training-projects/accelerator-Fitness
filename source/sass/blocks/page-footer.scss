@@ -3,3 +3,16 @@
   flex-wrap: wrap;
   margin-top: 60px;
 }
+
+/*   tablet version   */
+@media (max-width: $mw-tablet) {
+  .page-footer {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+}
+
+/*   mobile version   */
+@media (max-width: $mw-mobile) {
+  //
+}

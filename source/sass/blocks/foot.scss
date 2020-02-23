@@ -109,3 +109,31 @@
     opacity: 0.3;
   }
 }
+
+/*   tablet version   */
+@media (max-width: $mw-tablet) {
+  .foot__inner {
+    padding: 45px;
+  }
+
+  .foot__title {
+    margin-right: 15px;
+
+    font: 24px/24px "Bebas Neue", "Arial", sans-serif;
+  }
+
+  .foot__nav-list {
+    li {
+      margin-left: 30px;
+    }
+  }
+
+  .foot__social-item {
+    margin-left: 20px;
+  }
+}
+
+/*   mobile version   */
+@media (max-width: $mw-mobile) {
+  //
+}
