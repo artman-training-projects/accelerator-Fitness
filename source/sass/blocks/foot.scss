@@ -40,6 +40,7 @@
   @include reset-list;
 
   display: flex;
+  flex-wrap: wrap;
 
   font: 14px/16px "Roboto Condensed", "Arial", sans-serif;
   letter-spacing: 0.02;
@@ -63,6 +64,7 @@
   @include reset-list;
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 
   font-size: 0;
