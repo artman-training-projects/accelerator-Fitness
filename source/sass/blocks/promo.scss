@@ -28,7 +28,12 @@
 
     font-size: 0;
 
-    background: $color-bg-blue url("../img/promo-photo_desktop@1x.jpg") no-repeat center top / contain;
+    background-color: $color-bg-blue;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    object-fit: cover;
+    object-position: center top;
   }
 }
 
@@ -176,14 +181,13 @@
 
   .promo__year {
     width: 100%;
-    min-height: 462px;
+    min-height: 280px;
     margin: auto;
     margin-bottom: 30px;
 
     img {
       width: 399px;
-
-      background: $color-bg-blue url("../img/promo-photo_tablet@1x.jpg") no-repeat center top / contain;
+      height: 462px;
     }
   }
 
@@ -220,11 +224,8 @@
     text-align: center;
 
     img {
-      width: 100%;
-      height: auto;
-      min-height: 299px;
-
-      background: $color-bg-blue url("../img/promo-photo_mobile@1x.jpg") no-repeat center top / cover;
+      width: auto;
+      height: 299px;
     }
   }
 

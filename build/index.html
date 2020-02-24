@@ -75,25 +75,19 @@
           <p class="gym__description gym__description--second">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
         </div>
 
-        <picture class="gym__photo">
-          <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/gym-photo_mobile@1x.webp 1x, img/webp/gym-photo_mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1365px)" srcset="img/webp/gym-photo_tablet@1x.webp 1x, img/webp/gym-photo_tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/webp/gym-photo_desktop@1x.webp 1x, img/webp/gym-photo_desktop@2x.webp 2x">
+        <div class="gym__photo">
+          <picture>
+            <source type="image/webp" srcset="img/webp/gym-photo_desktop@1x.webp 1x, img/webp/gym-photo_desktop@2x.webp 2x">
+            <img src="img/gym-photo_desktop@1x.jpg" srcset="img/gym-photo_desktop@2x.jpg 2x" alt="Тренажёрный зал">
+          </picture>
+        </div>
 
-          <source media="(max-width: 767px)" srcset="img/gym-photo_mobile@1x.jpg 1x, img/gym-photo_mobile@2x.jpg 2x">
-          <source media="(max-width: 1365px)" srcset="img/gym-photo_tablet@1x.jpg 1x, img/gym-photo_tablet@2x.jpg 2x">
-          <img src="img/gym-photo_desktop@1x.jpg" srcset="img/gym-photo_desktop@2x.jpg 2x" alt="Тренажёрный зал">
-        </picture>
-
-        <picture class="gym__video" tabindex="0" aria-label="Запустить видео">
-          <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/gym-video_mobile@1x.webp 1x, img/webp/gym-video_mobile@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 1365px)" srcset="img/webp/gym-video_tablet@1x.webp 1x, img/webp/gym-video_tablet@2x.webp 2x">
+        <div class="gym__video" tabindex="0">
+          <picture>
             <source type="image/webp" srcset="img/webp/gym-video_desktop@1x.webp 1x, img/webp/gym-video_desktop@2x.webp 2x">
-
-            <source media="(max-width: 767px)" srcset="img/gym-video_mobile@1x.jpg 1x, img/gym-video_mobile@2x.jpg 2x">
-            <source media="(max-width: 1365px)" srcset="img/gym-video_tablet@1x.jpg 1x, img/gym-video_tablet@2x.jpg 2x">
-          <img src="img/gym-video_desktop@1x.jpg" srcset="img/gym-video_desktop@2x.jpg 2x" alt="Тренажёрный зал">
-        </picture>
+            <img src="img/gym-video_desktop@1x.jpg" srcset="img/gym-video_desktop@2x.jpg 2x" alt="Тренажёрный зал">
+          </picture>
+        </div>
       </div>
     </section>
 
@@ -267,15 +261,7 @@
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--square">
             <div>
-              <span>
-                <svg class="text" xmlns="http://www.w3.org/2000/svg">
-                  <linearGradient id="gradient" x1="0" x2="50%" y1="10%" y2="100%">
-                    <stop stop-color="#d10a42" offset="0%"></stop>
-                    <stop stop-color="#0041ca" offset="100%"></stop>
-                  </linearGradient>
-                  <text x="0" y="78" fill="url(#gradient)">900</text>
-                </svg>
-              </span>
+              <span>900</span>
               <i>кв/м</i>
             </div>
             <article>
@@ -286,15 +272,7 @@
 
           <li class="advantages__item advantages__item--parking">
             <div>
-              <span>
-                <svg class="text" xmlns="http://www.w3.org/2000/svg">
-                  <linearGradient id="gradient" x1="0" x2="50%" y1="10%" y2="100%">
-                    <stop stop-color="#d10a42" offset="0%"></stop>
-                    <stop stop-color="#0041ca" offset="100%"></stop>
-                  </linearGradient>
-                  <text x="0" y="78" fill="url(#gradient)">70</text>
-                </svg>
-              </span>
+              <span>70</span>
               <i>машин</i>
             </div>
             <article>
@@ -305,15 +283,7 @@
 
           <li class="advantages__item advantages__item--comfort">
             <div>
-              <span>
-                <svg class="text" xmlns="http://www.w3.org/2000/svg">
-                  <linearGradient id="gradient" x1="0" x2="50%" y1="10%" y2="100%">
-                    <stop stop-color="#d10a42" offset="0%"></stop>
-                    <stop stop-color="#0041ca" offset="100%"></stop>
-                  </linearGradient>
-                  <text x="0" y="78" fill="url(#gradient)">350</text>
-                </svg>
-              </span>
+              <span>350</span>
               <i>мест</i>
             </div>
             <article>
@@ -324,15 +294,7 @@
 
           <li class="advantages__item advantages__item--experience">
             <div>
-              <span>
-                <svg class="text" xmlns="http://www.w3.org/2000/svg">
-                  <linearGradient id="gradient" x1="0" x2="50%" y1="10%" y2="100%">
-                    <stop stop-color="#d10a42" offset="0%"></stop>
-                    <stop stop-color="#0041ca" offset="100%"></stop>
-                  </linearGradient>
-                  <text x="0" y="78" fill="url(#gradient)">5+</text>
-                </svg>
-              </span>
+              <span>5+</span>
               <i>лет</i>
             </div>
             <article>
@@ -365,7 +327,7 @@
             <a class="promo__year-link" href="#!">Подробнее</a>
           </div>
 
-          <img src="" alt="Фото акция">
+          <img src="img/promo-photo_desktop@1x.jpg" alt="Фото акция">
         </div>
 
         <div class="promo__add">
@@ -416,8 +378,10 @@
           <fieldset>
             <legend>Бесплатное занятие</legend>
 
-            <input id="userName" type="text" name="userName" placeholder="Имя" required="">
-            <input id="userTel" type="tel" name="userTel" placeholder="Телефон" pattern="[0-9]{11}" required="">
+            <div>
+              <input id="userName" type="text" name="userName" placeholder="Имя" required="">
+              <input id="userTel" type="tel" name="userTel" placeholder="Телефон" pattern="[0-9]{11}" required="">
+            </div>
 
             <button type="button">Отправить</button>
           </fieldset>

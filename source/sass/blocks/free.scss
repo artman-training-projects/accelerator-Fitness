@@ -19,7 +19,7 @@
 .free__form {
   fieldset {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     margin: 0;
     padding: 0;
@@ -32,6 +32,11 @@
 
     width: 100%;
     margin-bottom: 43px;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
   }
 
   input {
@@ -91,17 +96,13 @@
   .free__form {
     margin-left: -26px;
 
-    fieldset {
-      flex-direction: column;
-    }
-
     legend {
       margin-bottom: 36px;
     }
 
     input {
       width: 206px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     button {
@@ -119,10 +120,25 @@
     padding: 70px 15px;
   }
 
+
+  fieldset {
+    flex-direction: column;
+  }
+
   .free__form {
     margin-left: 0;
+
+    legend {
+      margin-bottom: 38px;
+    }
+
+    div {
+      display: block;
+    }
+
     input {
       width: 290px;
+      margin-bottom: 38px;
     }
   }
 }

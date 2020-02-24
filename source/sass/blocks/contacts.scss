@@ -7,6 +7,8 @@
 }
 
 .contacts__inner {
+  box-sizing: border-box;
+  width: 680px;
   margin-right: auto;
   padding: 70px 100px 50px 120px;
 }
@@ -55,6 +57,7 @@
   }
 
   .contacts__inner {
+    box-sizing: content-box;
     width: 535px;
     margin: auto;
     padding: 70px 70px 40px 105px;
@@ -102,7 +105,7 @@
     box-sizing: border-box;
     width: 320px;
     margin: auto;
-    padding: 70px 15px 47px 15px;
+    padding: 70px 15px 40px 15px;
   }
 
   .contacts__list {
@@ -110,6 +113,6 @@
   }
 
   .contacts__item {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
 }
