@@ -4,37 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Фитнес студия">
   <title>Fitness</title>
 
   <link rel="stylesheet" href="css/style.min.css">
-
-  <!-- Pixel Glass -->
-  <style>
-    html {
-      /* По умолчанию показывается мобильный макет */
-      background-image: url( "preview/pr-Phone.jpg" );
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-    }
-    /* Планшет */
-    @media ( min-width: 768px ) {
-      html {
-        /* Планшетный макет */
-        background-image: url( "preview/pr-Tablet.jpg" );
-      }
-    }
-    /* Десктоп */
-    @media ( min-width: 1366px ) {
-      html {
-        /* Десктопный макет */
-        background-image: url( "preview/pr-Desktop.jpg" );
-      }
-    }
-
-  </style>
-  <link href="preview/styles.css" rel="stylesheet">
-  <script src="preview/script.js"></script>
-  <!-- // Pixel Glass -->
 </head>
 <body>
   <header class="page-header">
@@ -57,9 +30,9 @@
 
       <div class="page-header__social head-social">
         <ul class="head-social__list">
-          <li class="head-social__item"><a href="https://facebook.com" target="_blank">fb</a></li>
-          <li class="head-social__item"><a href="https://vk.com" target="_blank">vk</a></li>
-          <li class="head-social__item"><a href="https://instagram.com" target="_blank">ig</a></li>
+          <li class="head-social__item"><a href="https://facebook.com" target="_blank" rel="noopener">fb</a></li>
+          <li class="head-social__item"><a href="https://vk.com" target="_blank" rel="noopener">vk</a></li>
+          <li class="head-social__item"><a href="https://instagram.com" target="_blank" rel="noopener">ig</a></li>
         </ul>
       </div>
     </div>
@@ -381,7 +354,9 @@
             <legend>Бесплатное занятие</legend>
 
             <div>
+              <label for="userName"></label>
               <input id="userName" type="text" name="userName" placeholder="Имя" required="">
+              <label for="userTel"></label>
               <input id="userTel" type="tel" name="userTel" placeholder="Телефон" pattern="[0-9]{11}" required="">
             </div>
 
@@ -430,9 +405,9 @@
         </nav>
 
         <ul class="foot__social-list">
-          <li class="foot__social-item foot__social-item--vk"><a href="https://vk.com" target="_blank">vk</a></li>
-          <li class="foot__social-item foot__social-item--instagram"><a href="https://instagram.com" target="_blank">instagram</a></li>
-          <li class="foot__social-item foot__social-item--fb"><a href="https://facebook.com" target="_blank">fb</a></li>
+          <li class="foot__social-item foot__social-item--vk"><a href="https://vk.com" target="_blank" rel="noopener">vk</a></li>
+          <li class="foot__social-item foot__social-item--instagram"><a href="https://instagram.com" target="_blank" rel="noopener">instagram</a></li>
+          <li class="foot__social-item foot__social-item--fb"><a href="https://facebook.com" target="_blank" rel="noopener">fb</a></li>
         </ul>
       </div>
     </section>
