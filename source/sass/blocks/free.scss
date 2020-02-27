@@ -4,10 +4,10 @@
   color: $color-text-second;
 
   background-color: $color-text-main;
-}
 
-.visually-hidden {
-  @include visually-hidden;
+  h2 {
+    @include visually-hidden;
+  }
 }
 
 .free__inner {

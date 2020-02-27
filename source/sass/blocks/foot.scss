@@ -19,21 +19,21 @@
   a:focus {
     outline: 3px solid #ed0233;
   }
-}
 
-.foot__title {
-  @include reset-head;
+  h3 {
+    @include reset-head;
 
-  font: 26px/26px "Bebas Neue", "Arial", sans-serif;
+    font: 26px/26px "Bebas Neue", "Arial", sans-serif;
 
-  transition: 0.3s;
+    transition: 0.3s;
 
-  &:hover {
-    opacity: 0.5;
-  }
+    &:hover {
+      opacity: 0.5;
+    }
 
-  &:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 

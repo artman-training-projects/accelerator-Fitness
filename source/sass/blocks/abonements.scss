@@ -13,6 +13,12 @@
   margin: auto;
   padding: 120px 103px 100px;
 
+  h2 {
+    @include reset-head;
+
+    margin-bottom: 34px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -29,12 +35,6 @@
       background: url("../img/rogue2_desktop@2x.png") no-repeat center / 321px 384px;
     }
   }
-}
-
-.abonements__title {
-  @include reset-head;
-
-  margin-bottom: 34px;
 }
 
 .abonements__type {
@@ -108,7 +108,6 @@
 
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
   align-self: stretch;
 }
 
@@ -225,6 +224,10 @@
     max-width: $tablet-max;
     padding: 100px 163px;
 
+    h2 {
+      margin-bottom: 30px;
+    }
+
     &::before {
       right: -10px;
       bottom: -74px;
@@ -239,10 +242,6 @@
         background: url("../img/rogue2_tablet@2x.png") no-repeat center / 289px 345px;
       }
     }
-  }
-
-  .abonements__title {
-    margin-bottom: 30px;
   }
 
   .abonements__type {
@@ -279,13 +278,13 @@
     min-width: $mobile-min;
     padding: 70px 15px;
 
+    h2 {
+      margin-bottom: 20px;
+    }
+
     &::before {
       display: none;
     }
-  }
-
-  .abonements__title {
-    margin-bottom: 20px;
   }
 
   .abonements__type {

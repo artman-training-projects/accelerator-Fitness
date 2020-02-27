@@ -7,14 +7,14 @@
   width: $desktop-min;
   margin: auto;
   padding: 120px 163px 70px;
-}
 
-.advantages__title {
-  @include reset-head;
+  h2 {
+    @include reset-head;
 
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 
-  text-align: center;
+    text-align: center;
+  }
 }
 
 .advantages__list {
@@ -165,10 +165,10 @@
     width: auto;
     max-width: $tablet-max;
     padding: 100px 45px 65px;
-  }
 
-  .advantages__title {
-    margin-bottom: 30px;
+    h2 {
+      margin-bottom: 30px;
+    }
   }
 
   .advantages__list {

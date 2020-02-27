@@ -6,6 +6,12 @@
   margin: auto;
   padding: 60px 103px 120px;
 
+  h2 {
+    @include reset-head;
+
+    margin-bottom: 48px;
+  }
+
   .btn-slide--prev {
     top: 51%;
     left: 48px;
@@ -15,12 +21,6 @@
     top: 51%;
     right: 48px;
   }
-}
-
-.trainers__title {
-  @include reset-head;
-
-  margin-bottom: 48px;
 }
 
 .trainers__list {
@@ -148,6 +148,12 @@
     max-width: $tablet-max;
     padding: 50px 101px 100px;
 
+    h2 {
+      margin-bottom: 40px;
+
+      text-align: center;
+    }
+
     .btn-slide--prev {
       top: 50%;
       left: 46px;
@@ -165,12 +171,6 @@
     @media (min-width: 768px + 290px) {
       width: 864px;
     }
-  }
-
-  .trainers__title {
-    margin-bottom: 40px;
-
-    text-align: center;
   }
 
   .trainers__item {

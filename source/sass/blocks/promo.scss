@@ -6,15 +6,15 @@
   width: $desktop-min;
   margin: auto;
   padding: 120px 103px 60px;
-}
 
-.promo__title {
-  @include reset-head;
+  h2 {
+    @include reset-head;
 
-  width: 100%;
-  margin-bottom: 49px;
+    width: 100%;
+    margin-bottom: 49px;
 
-  text-align: center;
+    text-align: center;
+  }
 }
 
 .promo__year {
@@ -177,10 +177,10 @@
     width: auto;
     max-width: $tablet-max;
     padding: 100px 45px 50px;
-  }
 
-  .promo__title {
-    margin-bottom: 40px;
+    h2 {
+      margin-bottom: 40px;
+    }
   }
 
   .promo__year {
@@ -217,10 +217,10 @@
   .promo__inner {
     min-width: $mobile-min;
     padding: 68px 15px 20px;
-  }
 
-  .promo__title {
-    margin-bottom: 43px;
+    h2 {
+      margin-bottom: 43px;
+    }
   }
 
   .promo__year {
