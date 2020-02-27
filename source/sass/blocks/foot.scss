@@ -1,4 +1,5 @@
 .foot {
+  min-width: $desktop-min;
   width: 100%;
 
   background-color: $color-bg-foot;
@@ -114,7 +115,11 @@
 }
 
 /*   tablet version   */
-@media (max-width: $mw-tablet) {
+@media (max-width: $tablet-max) {
+  .foot {
+    min-width: $tablet-min;
+  }
+
   .foot__inner {
     padding: 45px;
   }
@@ -137,13 +142,18 @@
 }
 
 /*   mobile version   */
-@media (max-width: $mw-mobile) {
+@media (max-width: $mobile-max) {
+  .foot {
+    min-width: $mobile-min;
+  }
+
   .foot__inner {
     position: relative;
 
     flex-direction: column;
     align-items: flex-start;
     box-sizing: border-box;
+    min-width: $mobile-min;
     width: 320px;
     margin: auto;
     padding: 50px 15px;

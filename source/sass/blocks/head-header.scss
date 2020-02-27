@@ -28,7 +28,7 @@
 }
 
 /*   tablet version   */
-@media (max-width: $mw-tablet) {
+@media (max-width: $tablet-max) {
   .head-header__link-site,
   .head-header__link-tel {
     font-size: 24px;
@@ -37,7 +37,7 @@
 }
 
 /*   mobile version   */
-@media (max-width: $mw-mobile) {
+@media (max-width: $mobile-max) {
   .head-header__link-site,
   .head-header__link-tel {
     font-size: 20px;

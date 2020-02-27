@@ -64,7 +64,7 @@
 }
 
 /*   tablet version   */
-@media (max-width: $mw-tablet) {
+@media (max-width: $tablet-max) {
   .head-main__city {
     font-size: 34px;
     line-height: 34px;
@@ -89,7 +89,7 @@
 }
 
 /*   mobile version   */
-@media (max-width: $mw-mobile) {
+@media (max-width: $mobile-max) {
   .head-main__city {
     font-size: 28px;
     line-height: 28px;

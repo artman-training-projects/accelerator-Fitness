@@ -15,12 +15,12 @@
   text-transform: uppercase;
   letter-spacing: 0.03em;
 
-  @media (max-width: $mw-tablet) {
+  @media (max-width: $tablet-max) {
     font-size: 42px;
     line-height: 42px;
   }
 
-  @media (max-width: $mw-mobile) {
+  @media (max-width: $mobile-max) {
     font-size: 32px;
     line-height: 32px;
   }

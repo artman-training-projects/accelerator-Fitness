@@ -4,7 +4,7 @@
 
 .advantages__inner {
   box-sizing: border-box;
-  max-width: $mw-desktop;
+  width: $desktop-min;
   margin: auto;
   padding: 120px 163px 70px;
 }
@@ -159,8 +159,11 @@
 }
 
 /*   tablet version   */
-@media (max-width: $mw-tablet) {
+@media (max-width: $tablet-max) {
   .advantages__inner {
+    min-width: $tablet-min;
+    width: auto;
+    max-width: $tablet-max;
     padding: 100px 45px 65px;
   }
 
@@ -270,8 +273,9 @@
 }
 
 /*   mobile version   */
-@media (max-width: $mw-mobile) {
+@media (max-width: $mobile-max) {
   .advantages__inner {
+    min-width: $mobile-min;
     padding: 70px 0 45px;
   }
 

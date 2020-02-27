@@ -2,7 +2,7 @@
   position: relative;
 
   box-sizing: border-box;
-  max-width: $mw-desktop;
+  width: $desktop-min;
   margin: auto;
   padding: 60px 103px 120px;
 
@@ -141,8 +141,11 @@
 }
 
 /*   tablet version   */
-@media (max-width: $mw-tablet) {
+@media (max-width: $tablet-max) {
   .trainers__inner {
+    min-width: $tablet-min;
+    width: auto;
+    max-width: $tablet-max;
     padding: 50px 101px 100px;
 
     .btn-slide--prev {
@@ -177,8 +180,9 @@
 }
 
 /*   mobile version   */
-@media (max-width: $mw-mobile) {
+@media (max-width: $mobile-max) {
   .trainers__inner {
+    min-width: $mobile-min;
     padding: 35px 47px 70px;
 
     .btn-slide--prev {

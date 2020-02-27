@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   align-items: flex-start;
   box-sizing: border-box;
-  max-width: $mw-desktop;
+  width: $desktop-min;
   margin: auto;
   padding: 120px 103px 60px;
 }
@@ -166,10 +166,13 @@
 
 
 /*   tablet version   */
-@media (max-width: $mw-tablet) {
+@media (max-width: $tablet-max) {
   .promo__inner {
     flex-direction: column;
     align-items: center;
+    min-width: $tablet-min;
+    width: auto;
+    max-width: $tablet-max;
     padding: 100px 45px 50px;
   }
 
@@ -207,8 +210,9 @@
 }
 
 /*   mobile version   */
-@media (max-width: $mw-mobile) {
+@media (max-width: $mobile-max) {
   .promo__inner {
+    min-width: $mobile-min;
     padding: 68px 15px 20px;
   }
 

@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  max-width: $mw-desktop;
+  width: $desktop-min;
   margin: auto;
   padding: 119px 103px 60px;
 }
@@ -149,8 +149,11 @@
 }
 
 /* tablet version   */
-@media (max-width: $mw-tablet) {
+@media (max-width: $tablet-max) {
   .competition__inner {
+    min-width: $tablet-min;
+    width: auto;
+    max-width: $tablet-max;
     margin: auto;
     padding: 99px 45px 50px;
   }
@@ -240,9 +243,10 @@
 }
 
 /*   mobile version   */
-@media (max-width: $mw-mobile) {
+@media (max-width: $mobile-max) {
   .competition__inner {
     flex-direction: column;
+    min-width: $mobile-min;
     margin: auto;
     padding: 69px 15px 35px;
   }

@@ -1,6 +1,8 @@
-$mw-desktop: 1366px;
-$mw-tablet: 1365px;
-$mw-mobile: 767px;
+$desktop-min: 1366px;
+$tablet-min: 768px;
+$tablet-max: 1365px;
+$mobile-min: 320px;
+$mobile-max: 767px;
 $dppx-2: "min-resolution: 1.5dppx";
 $color-text-main: #102654;
 $color-text-second: #ffffff;

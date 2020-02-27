@@ -34,7 +34,7 @@
 }
 
 /*   tablet version   */
-@media (max-width: $mw-tablet) {
+@media (max-width: $tablet-max) {
   .head-social {
     display: none;
   }

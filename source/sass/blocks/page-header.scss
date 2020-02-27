@@ -11,7 +11,7 @@
 .page-header__inner {
   position: relative;
 
-  max-width: $mw-desktop;
+  width: $desktop-min;
   margin: auto;
 }
 
@@ -27,13 +27,19 @@
 }
 
 /*   tablet version   */
-@media (max-width: $mw-tablet) {
+@media (max-width: $tablet-max) {
   .page-header {
     background: url("../img/ameer-basheer_tablet@1x.jpg") no-repeat 52vw / 324px 390px, url("../img/bg-gradient_tablet@1x.jpg") no-repeat 100% 100% / cover;
 
     @media ($dppx-2) {
       background: url("../img/ameer-basheer_tablet@2x.jpg") no-repeat 52vw / 324px 390px, url("../img/bg-gradient_tablet@2x.jpg") no-repeat 100% 100% / cover;
     }
+  }
+
+  .page-header__inner {
+    min-width: $tablet-min;
+    width: auto;
+    max-width: $tablet-max;
   }
 
   .page-header__head {
@@ -49,13 +55,17 @@
 }
 
 /*   mobile version   */
-@media (max-width: $mw-mobile) {
+@media (max-width: $mobile-max) {
   .page-header {
     background: url("../img/bg-gradient_mobile@1x.jpg") no-repeat 100% 100% / cover;
 
     @media ($dppx-2) {
       background: url("../img/bg-gradient_mobile@2x.jpg") no-repeat 100% 100% / cover;
     }
+  }
+
+  .page-header__inner {
+    min-width: $mobile-min;
   }
 
   .page-header__head {

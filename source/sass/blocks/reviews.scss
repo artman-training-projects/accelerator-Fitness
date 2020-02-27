@@ -1,4 +1,9 @@
 .reviews__inner {
+  width: $desktop-min;
+  margin: auto;
+}
+
+.reviews__slider {
   position: relative;
 
   box-sizing: border-box;
@@ -80,8 +85,14 @@
 }
 
 /*   tablet version   */
-@media (max-width: $mw-tablet) {
+@media (max-width: $tablet-max) {
   .reviews__inner {
+    min-width: $tablet-min;
+    width: auto;
+    max-width: $tablet-max;
+  }
+
+  .reviews__slider {
     max-width: 566px;
     padding: 50px 0;
   }
@@ -96,8 +107,12 @@
 }
 
 /*   mobile version   */
-@media (max-width: $mw-mobile) {
+@media (max-width: $mobile-max) {
   .reviews__inner {
+    min-width: $mobile-min;
+  }
+
+  .reviews__slider {
     max-width: 226px;
     padding: 20px 0;
 

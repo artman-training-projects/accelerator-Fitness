@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
   box-sizing: border-box;
-  max-width: $mw-desktop;
+  width: $desktop-min;
   margin: auto;
   padding: 120px 103px 120px 163px;
 }
@@ -103,10 +103,12 @@
 }
 
 /*   tablet version   */
-@media (max-width: $mw-tablet) {
+@media (max-width: $tablet-max) {
   .gym__inner {
     flex-direction: column;
     align-items: center;
+    width: auto;
+    max-width: $tablet-max;
     padding: 100px 45px;
   }
 
@@ -158,7 +160,7 @@
 }
 
 /*   mobile version   */
-@media (max-width: $mw-mobile) {
+@media (max-width: $mobile-max) {
   .gym__inner {
     align-items: unset;
     margin-left: -15px;

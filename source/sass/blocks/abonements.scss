@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  max-width: $mw-desktop;
+  width: $desktop-min;
   margin: auto;
   padding: 120px 103px 100px;
 
@@ -213,8 +213,11 @@
 }
 
 /*   tablet version   */
-@media (max-width: $mw-tablet) {
+@media (max-width: $tablet-max) {
   .abonements__inner {
+    min-width: $tablet-min;
+    width: auto;
+    max-width: $tablet-max;
     padding: 100px 163px;
 
     &::before {
@@ -265,8 +268,9 @@
 }
 
 /*   mobile version   */
-@media (max-width: $mw-mobile) {
+@media (max-width: $mobile-max) {
   .abonements__inner {
+    min-width: $mobile-min;
     padding: 70px 15px;
 
     &::before {

@@ -1,18 +1,22 @@
 .page-footer {
   display: flex;
   flex-wrap: wrap;
+  min-width: $desktop-min;
   margin-top: 60px;
 }
 
 /*   tablet version   */
-@media (max-width: $mw-tablet) {
+@media (max-width: $tablet-max) {
   .page-footer {
     flex-direction: column;
+    min-width: $tablet-min;
     margin-top: 50px;
   }
 }
 
 /*   mobile version   */
-@media (max-width: $mw-mobile) {
-  //
+@media (max-width: $mobile-max) {
+  .page-footer {
+    min-width: $mobile-min;
+  }
 }

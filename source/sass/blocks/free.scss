@@ -11,7 +11,8 @@
 }
 
 .free__inner {
-  width: 410px;
+  box-sizing: border-box;
+  width: 680px;
   margin-left: auto;
   padding: 70px 170px 70px 100px;
 }
@@ -83,13 +84,14 @@
 }
 
 /*   tablet version   */
-@media (max-width: $mw-tablet) {
+@media (max-width: $tablet-max) {
   .free {
+    min-width: $tablet-min;
     width: 100%;
   }
 
   .free__inner {
-    width: 450px;
+    width: 592px;
     margin: auto;
     padding: 70px;
   }
@@ -113,9 +115,14 @@
 }
 
 /*   mobile version   */
-@media (max-width: $mw-mobile) {
+@media (max-width: $mobile-max) {
+  .free {
+    min-width: $mobile-min;
+  }
+
   .free__inner {
     box-sizing: border-box;
+    min-width: $mobile-min;
     width: 320px;
     margin: auto;
     padding: 70px 15px;

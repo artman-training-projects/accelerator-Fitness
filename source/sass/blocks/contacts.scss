@@ -51,14 +51,14 @@
 }
 
 /*   tablet version   */
-@media (max-width: $mw-tablet) {
+@media (max-width: $tablet-max) {
   .contacts {
+    min-width: $tablet-min;
     width: 100%;
   }
 
   .contacts__inner {
-    box-sizing: content-box;
-    width: 535px;
+    width: 708px;
     margin: auto;
     padding: 70px 70px 40px 105px;
   }
@@ -100,9 +100,14 @@
 }
 
 /*   mobile version   */
-@media (max-width: $mw-mobile) {
+@media (max-width: $mobile-max) {
+  .contacts {
+    min-width: $mobile-min;
+  }
+
   .contacts__inner {
     box-sizing: border-box;
+    min-width: $mobile-min;
     width: 320px;
     margin: auto;
     padding: 70px 15px 40px 15px;
