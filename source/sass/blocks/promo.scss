@@ -103,6 +103,7 @@
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+  width: 560px;
 
   h3 {
     margin-top: 0;
@@ -124,6 +125,8 @@
   }
 
   a {
+    margin-top: 15px;
+
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
