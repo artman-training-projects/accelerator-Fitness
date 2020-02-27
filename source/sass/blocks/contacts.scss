@@ -32,7 +32,7 @@
   margin-bottom: 16px;
   padding-left: 3px;
 
-  & :nth-child(2) {
+  & :nth-child(2n) {
     margin-top: 0;
     margin-bottom: 0;
 
@@ -71,7 +71,7 @@
     margin-bottom: 20px;
     padding-left: 0;
 
-    &:nth-child(2) {
+    & :nth-child(2n) {
       font: 18px/27px "Roboto Condensed", "Arial", sans-serif;
     }
 
