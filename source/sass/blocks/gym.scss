@@ -162,17 +162,14 @@
 /*   mobile version   */
 @media (max-width: $mobile-max) {
   .gym__inner {
-    align-items: unset;
-    margin-left: -15px;
-    padding: 70px 15px;
+    padding: 70px 0;
   }
 
   .gym__article {
-    left: 0;
-
     min-width: 290px;
     margin: auto;
     margin-bottom: 22px;
+    padding: 0 15px;
 
     text-align: left;
   }
