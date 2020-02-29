@@ -102,10 +102,6 @@
   &:active::after {
     transform: scale(0.8);
   }
-
-  &:focus::after {
-    outline: 5px solid #003d85;
-  }
 }
 
 /*   tablet version   */

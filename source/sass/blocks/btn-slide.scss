@@ -19,10 +19,6 @@
     transform: scale(1.2);
   }
 
-  &:focus {
-    outline: 3px solid #003d85;
-  }
-
   &--prev {
     background-image: url("../img/svg/arrow-left.svg");
   }

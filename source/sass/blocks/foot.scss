@@ -16,10 +16,6 @@
     text-decoration: none;
   }
 
-  a:focus {
-    outline: 3px solid #ed0233;
-  }
-
   h3 {
     @include reset-head;
 
