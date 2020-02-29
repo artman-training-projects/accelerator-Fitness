@@ -14,7 +14,7 @@
   box-sizing: border-box;
   width: 680px;
   margin-left: auto;
-  padding: 70px 170px 70px 100px;
+  padding: 68px 170px 70px 100px;
 }
 
 .free__form {
@@ -52,6 +52,9 @@
 
     background-color: $color-text-main;
     border: none;
+  }
+
+  label {
     border-bottom: 1px solid #74819c;
   }
 
@@ -103,11 +106,6 @@
 
     input {
       width: 206px;
-      margin-bottom: 30px;
-    }
-
-    button {
-      margin-top: 0;
     }
   }
 }
@@ -126,13 +124,12 @@
     padding: 70px 15px;
   }
 
-
-  fieldset {
-    flex-direction: column;
-  }
-
   .free__form {
     margin-left: 0;
+
+    fieldset {
+      flex-direction: column;
+    }
 
     legend {
       margin-bottom: 38px;
@@ -144,7 +141,15 @@
 
     input {
       width: 290px;
-      margin-bottom: 38px;
+      margin-bottom: 35px;
+    }
+
+    label {
+      padding-bottom: 5px;
+    }
+
+    button {
+      margin-top: 8px;
     }
   }
 }
