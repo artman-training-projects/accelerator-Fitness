@@ -52,6 +52,11 @@
 
   color: $color-text-second;
 
+  picture {
+    width: 80px;
+    height: 80px;
+  }
+
   img {
     width: 80px;
     height: 80px;
@@ -133,6 +138,11 @@
 
   .reviews__item {
     padding: 40px 25px 38px;
+
+    picture {
+      width: 68px;
+      height: 68px;
+    }
 
     img {
       width: 68px;
