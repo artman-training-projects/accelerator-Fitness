@@ -99,12 +99,12 @@
 @media (max-width: $mobile-max) {
   .contacts {
     min-width: $mobile-min;
+    width: auto;
   }
 
   .contacts__inner {
     box-sizing: border-box;
-    min-width: $mobile-min;
-    width: 320px;
+    width: $mobile-min;
     margin: auto;
     padding: 70px 15px 40px 15px;
   }

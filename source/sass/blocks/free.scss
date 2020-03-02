@@ -114,12 +114,12 @@
 @media (max-width: $mobile-max) {
   .free {
     min-width: $mobile-min;
+    width: auto;
   }
 
   .free__inner {
     box-sizing: border-box;
-    min-width: $mobile-min;
-    width: 320px;
+    width: $mobile-min;
     margin: auto;
     padding: 70px 15px;
   }

@@ -141,6 +141,7 @@
 @media (max-width: $mobile-max) {
   .foot {
     min-width: $mobile-min;
+    width: auto;
   }
 
   .foot__inner {
@@ -149,8 +150,7 @@
     flex-direction: column;
     align-items: flex-start;
     box-sizing: border-box;
-    min-width: $mobile-min;
-    width: 320px;
+    width: $mobile-min;
     margin: auto;
     padding: 50px 15px;
 
