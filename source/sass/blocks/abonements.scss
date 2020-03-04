@@ -1,10 +1,26 @@
 .abonements {
+  position: relative;
+
   background-color: $color-bg-light;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -150px;
+
+    width: 287px;
+    height: 494px;
+
+    background: url("../img/rogue2_desktop@1x.png") no-repeat center / 287px 494px;
+
+    @media ($dppx-2) {
+      background: url("../img/rogue2_desktop@2x.png") no-repeat center / 287px 494px;
+    }
+  }
 }
 
 .abonements__inner {
-  position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,23 +33,6 @@
     @include reset-head;
 
     margin-bottom: 34px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    right: -110px;
-    bottom: -95px;
-
-    width: 321px;
-    height: 384px;
-
-    background: url("../img/rogue2_desktop@1x.png") no-repeat center / 321px 384px;
-    transform: rotate(150deg);
-
-    @media ($dppx-2) {
-      background: url("../img/rogue2_desktop@2x.png") no-repeat center / 321px 384px;
-    }
   }
 }
 
@@ -210,6 +209,21 @@
 
 /*   tablet version   */
 @media (max-width: $tablet-max) {
+  .abonements {
+    &::before {
+      bottom: -130px;
+
+      width: 347px;
+      height: 444px;
+
+      background: url("../img/rogue2_tablet@1x.png") no-repeat center / 347px 444px;
+
+      @media ($dppx-2) {
+        background: url("../img/rogue2_tablet@2x.png") no-repeat center / 347px 444px;
+      }
+    }
+  }
+
   .abonements__inner {
     min-width: $tablet-min;
     width: auto;
@@ -218,21 +232,6 @@
 
     h2 {
       margin-bottom: 30px;
-    }
-
-    &::before {
-      right: -10px;
-      bottom: -74px;
-
-      width: 289px;
-      height: 345px;
-
-      background: url("../img/rogue2_tablet@1x.png") no-repeat center / 289px 345px;
-      transform: rotate(150deg);
-
-      @media ($dppx-2) {
-        background: url("../img/rogue2_tablet@2x.png") no-repeat center / 289px 345px;
-      }
     }
   }
 
@@ -266,16 +265,18 @@
 
 /*   mobile version   */
 @media (max-width: $mobile-max) {
+  .abonements {
+    &::before {
+      display: none;
+    }
+  }
+
   .abonements__inner {
     min-width: $mobile-min;
     padding: 70px 15px;
 
     h2 {
       margin-bottom: 20px;
-    }
-
-    &::before {
-      display: none;
     }
   }
 
