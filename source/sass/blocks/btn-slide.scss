@@ -19,6 +19,10 @@
     transform: scale(1.2);
   }
 
+  &:focus {
+    outline: none;
+  }
+
   &--prev {
     background-image: url("../img/svg/arrow-left.svg");
   }
