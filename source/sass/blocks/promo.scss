@@ -158,11 +158,11 @@
   flex-direction: column;
   box-sizing: border-box;
   min-height: 211px;
-  padding: 24px 28px 28px;
+  padding: 31px 35px 35px;
 
-  border: 7px solid transparent;
   border-image: linear-gradient(to bottom right, #d10a42, #00359f);
   border-image-slice: 1;
+  border-image-width: 7px;
 }
 
 
@@ -254,8 +254,8 @@
   .promo__discount {
     width: 100%;
     margin-bottom: 30px;
-    padding-top: 34px;
-    padding-bottom: 40px;
+    padding-top: 41px;
+    padding-bottom: 47px;
 
     text-align: center;
   }
