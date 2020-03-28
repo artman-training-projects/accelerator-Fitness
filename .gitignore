@@ -11,6 +11,7 @@ node_modules/
 npm-debug.*
 Thumbs.db
 
+build/
 source/design/
 
 .csscomb.json
